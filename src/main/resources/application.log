@@ -1,0 +1,327 @@
+1024 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+1041 [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 12852 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+1042 [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1960 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2048 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
+3123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+3135 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3136 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3137 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+3307 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2198 ms
+3588 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+3779 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+3833 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+3902 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+4123 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4288 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+5174 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5183 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5588 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5763 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByFirstName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
+5765 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+5766 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+5772 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+5776 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+5794 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+5819 [main] ERROR o.s.boot.SpringApplication – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByFirstName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.example.demo.Task17Application.main(Task17Application.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByFirstName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+809  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+814  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 11920 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+816  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2366 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2366 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2366 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2517 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2517 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1648 ms
+2751 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2907 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2951 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2996 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3146 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3279 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3969 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4341 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4520 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByLastName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
+4522 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+4523 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+4530 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+4534 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+4554 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+4581 [main] ERROR o.s.boot.SpringApplication – Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByLastName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.example.demo.Task17Application.main(Task17Application.java:10)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
+com.example.demo.View.PatientController#findPatientByLastName(String)
+to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
+com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+752  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+757  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 9424 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+758  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1404 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1467 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2249 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2257 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2258 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2258 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1605 ms
+2630 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2897 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2948 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2990 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3137 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3250 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3948 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3956 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4319 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4800 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+4835 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4841 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+4846 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+4847 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+4854 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+4860 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8080"]
+4860 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+4865 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8080"]
+4866 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8080"]
+4881 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+4904 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+750  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+752  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 13032 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+755  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2387 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2395 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2395 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2395 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2546 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2546 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1733 ms
+2819 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+3092 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+3139 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+3179 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3337 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3471 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4141 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4149 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4511 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4981 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+5012 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+5016 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+5022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+5024 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+5030 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+5036 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8080"]
+5036 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
+5041 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8080"]
+5042 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8080"]
+5055 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+5069 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+740  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+742  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 4100 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+743  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1371 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1430 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2245 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2245 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2246 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2400 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2400 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1609 ms
+2620 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2775 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2813 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2856 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3002 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3119 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3795 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3803 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4171 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4625 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+4655 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4674 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+4691 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.344 seconds (JVM running for 5.359)
+5209 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5210 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5211 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+63916 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+63918 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+63925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+735  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+737  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 6940 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+739  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2247 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2255 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2255 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2255 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2408 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2408 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1618 ms
+2625 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+2781 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+2819 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+2865 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3011 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3135 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+3823 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+3832 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4196 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+4660 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+4693 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+4712 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+4729 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.402 seconds (JVM running for 5.298)
+4827 [RMI TCP Connection(1)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+4827 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+4828 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
+30473 [http-nio-8080-exec-1] INFO  c.e.demo.Service.DoctorService – Create doctor Doctor{firstName='Ivan', lastName='Ivanov', position=9}
+
+255006 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+255008 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+255015 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+730  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+742  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 3876 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+744  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2360 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+2369 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+2370 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+2370 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+2559 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+2559 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1766 ms
+2858 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+3020 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+3066 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+3115 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+3282 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+3397 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+4131 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4142 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+4535 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5010 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+5040 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+5062 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+5080 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.724 seconds (JVM running for 5.762)
+5192 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+5192 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+5194 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
