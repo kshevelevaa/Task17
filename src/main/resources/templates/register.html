@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Greeting page</title>
+</head>
+<body style="text-align: center;">
+
+<form  action="/register" th:object="${user}" method="post">
+    <label for="name">Enter name: </label>
+    <input type="text" th:field="*{username}" id="name"/>
+    <br>
+    <label for="password">Enter password: </label>
+    <input type="password" th:field="*{password}" id="password"/>
+    <br>
+    <input type="submit" value="Register!"/>
+</form>
+
+</body>
+</html>
