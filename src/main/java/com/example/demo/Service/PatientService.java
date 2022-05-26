@@ -14,10 +14,12 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
 @Slf4j
+@Transactional
 public class PatientService {
     @Autowired
     private PatientRepository patientRepository;
@@ -62,7 +64,7 @@ public class PatientService {
     }
 
     public List<Patient> printPatients() {
-        log.info("print patients {}", patientRepository.findAllBy());
+        //log.info("print patients {}", patientRepository.findAllBy());
         return patientRepository.findAllBy();
     }
 

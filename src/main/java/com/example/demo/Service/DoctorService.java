@@ -7,15 +7,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Transient;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
 @Slf4j
+@Transactional
 public class DoctorService {
 
     @Autowired
@@ -46,7 +49,6 @@ public class DoctorService {
             return true;
         }
     }
-
 
     public Doctor printDoctor(int id) {
         log.info("Print doctor {}", doctorRepository.findDoctorById(id));

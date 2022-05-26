@@ -1,327 +1,517 @@
-1024 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-1041 [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 12852 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-1042 [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1960 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2048 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 71 ms. Found 2 JPA repository interfaces.
-3123 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-3135 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-3136 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-3137 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-3307 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-3308 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2198 ms
-3588 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-3779 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-3833 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-3902 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-4123 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-4288 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-5174 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-5183 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-5588 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-5763 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByFirstName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
-5765 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-5766 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-5772 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-5776 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-5794 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+886  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+894  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 22348 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+896  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
+1848 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+1946 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+3352 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+3365 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3366 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3366 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
+3592 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3592 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2641 ms
+4023 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4246 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4316 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4417 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+4675 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+4942 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+6098 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6113 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6793 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+7205 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+7911 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.css']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7912 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.css'] with []
+7912 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.jpg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7913 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.jpg'] with []
+7913 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.png']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7913 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.png'] with []
+7913 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.svg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7913 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.svg'] with []
+7913 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.mp4']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7913 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.mp4'] with []
+7913 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.js']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7913 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.js'] with []
+7914 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.eot']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7914 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.eot'] with []
+7914 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7914 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff'] with []
+7914 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7914 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff2'] with []
+7914 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7914 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.ttf'] with []
+7914 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+7915 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**/**.ttf'] with []
+7966 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will not secure any request
+8000 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+8098 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+8135 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+8173 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 7.746 seconds (JVM running for 8.883)
+8438 [RMI TCP Connection(7)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+8438 [RMI TCP Connection(7)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+8441 [RMI TCP Connection(7)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 3 ms
+9166 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+9170 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 108 ms
+19049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+19050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+29046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+29046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+32977 [http-nio-8080-exec-5] INFO  com.example.demo.Aspect.Aspect – UserService.loadUserByUsername(..) completed in 224 ms
+33238 [http-nio-8080-exec-6] INFO  c.e.demo.Service.DoctorService – print doctors [Doctor{firstName='Ivan', lastName='Ivanov', position=204}
+, Doctor{firstName='Ivan', lastName='Ivanov', position=2067}
+, Doctor{firstName='testFirstName', lastName='testLastName', position=404}
+, Doctor{firstName='testFirstName', lastName='testLastName', position=406}
+]
+33249 [http-nio-8080-exec-6] INFO  com.example.demo.Aspect.Aspect – DoctorService.printDoctors() completed in 34 ms
+39046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+39047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+49052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+49052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+55925 [http-nio-8080-exec-7] INFO  c.e.demo.Service.DoctorService – filter doctors by name Ivan
+55942 [http-nio-8080-exec-7] INFO  com.example.demo.Aspect.Aspect – DoctorService.findDoctorByFirstName(..) completed in 17 ms
+59052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+59052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 11 ms
+69044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+69044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+79055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+79055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+89048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+89048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+99056 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+99056 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+109047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+109047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+119044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+119044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+129054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+129055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+139053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+139054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+149045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+149046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+159045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+159045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+169054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+169054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+179052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+179052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+189047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+189047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+199054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+199054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+209055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+209056 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+219043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+219043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+229052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+229053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+239055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+239056 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+249042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+249042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+259047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+259047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+269045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+269045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+279052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+279053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+289042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+289043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+299057 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+299058 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+309043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+309043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+319058 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+319058 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+329054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+329055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+339050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+339050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+349046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+349047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+359045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+359045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+369053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+369053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+379056 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+379056 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 11 ms
+389051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+389051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+399054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+399055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+409045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+409045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+419048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+419048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+429045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+429046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+439052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+439052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 11 ms
+449052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+449053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+459043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+459044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+469041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+469042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+479043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+479044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+489044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+489044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+499044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+499044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+509048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+509049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+519053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+519054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+529055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+529055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+539044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+539044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+549048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+549049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+559053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+559053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+569051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+569051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+579051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+579052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+589041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+589042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+599053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+599053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+609043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+609043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+619055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+619055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+629046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+629047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+639044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+639044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+649052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+649052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+659049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+659049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+669042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+669042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+679057 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+679057 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+689050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+689050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+699048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+699048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+709050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+709050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+719054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+719054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+729043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+729044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+739052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+739053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+749043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+749044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+759042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+759042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+769047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+769047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+779052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+779052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+789054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+789055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+799046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+799046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+809049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+809050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+819041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+819042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+829042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+829042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+839051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+839051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+849045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+849045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+859045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+859046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 11 ms
+869054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+869055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+879044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+879044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+889045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+889046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+899044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+899044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+909045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+909045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+919047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+919047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+929054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+929054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+939050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+939050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+949049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+949050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+959052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+959052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+969050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+969050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+979049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+979049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+989052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+989052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+999043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+999043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1009047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1009047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1019051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1019051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1029048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1029049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1039041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1039041 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1049045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1049045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1059042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1059042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1069055 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1069055 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1079048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1079048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1089045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1089045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1099054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1099054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 10 ms
+1109041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1109041 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1119052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1119052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1129054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1129054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1139051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1139051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1149042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1149042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1159054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1159054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1169044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1169044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1179042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1179042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1189053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1189053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1199050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1199050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1209046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1209046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1219045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1219045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+1229054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1229054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1239044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1239045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1249051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1249051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1259041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1259041 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1269041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1269042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1279047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1279047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+1289051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1289051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+353  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.Service.DoctorServiceTest], using SpringBootContextLoader
+364  [main] INFO  o.s.t.c.s.AbstractContextLoader – Could not detect default resource locations for test class [com.example.demo.Service.DoctorServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+365  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils – Could not detect default configuration classes for test class [com.example.demo.Service.DoctorServiceTest]: DoctorServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+588  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Found @SpringBootConfiguration com.example.demo.Task17Application for test class com.example.demo.Service.DoctorServiceTest
+782  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+821  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2eced48b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47c4ecdc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@42f33b5d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c8504fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b7e96a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6475472c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f07b12c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4bd1f8dd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7096b474, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3e14c16d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c989952, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@784b990c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d3ba765, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@25bc0606, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d1659ea]
+1330 [main] INFO  c.e.demo.Service.DoctorServiceTest – Starting DoctorServiceTest using Java 16.0.2 on LAPTOP-790PRGJM with PID 14120 (started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+1331 [main] INFO  c.e.demo.Service.DoctorServiceTest – No active profile set, falling back to 1 default profile: "default"
+1337 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+2585 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2700 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
+4440 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4883 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4999 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5118 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+5555 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5795 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+7081 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7103 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+1299050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1299050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 5 ms
+8232 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+9409 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+10547 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.css']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10548 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.css'] with []
+10549 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.jpg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10550 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.jpg'] with []
+10550 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.png']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10551 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.png'] with []
+10551 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.svg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10551 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.svg'] with []
+10552 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.mp4']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10552 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.mp4'] with []
+10552 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.js']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10553 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.js'] with []
+10553 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.eot']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10554 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.eot'] with []
+10554 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10555 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff'] with []
+10555 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10556 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff2'] with []
+10556 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10556 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.ttf'] with []
+10557 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10557 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**/**.ttf'] with []
+10728 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will not secure any request
+10895 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+10992 [main] INFO  c.e.demo.Service.DoctorServiceTest – Started DoctorServiceTest in 10.098 seconds (JVM running for 12.134)
+11631 [main] INFO  c.e.demo.Service.DoctorService – Delete doctor null
+11639 [main] INFO  com.example.demo.Aspect.Aspect – DoctorService.deleteDoctor(..) completed in 228 ms
+11677 [main] INFO  c.e.demo.Service.DoctorService – Create doctor Doctor{firstName='testFirstName', lastName='testLastName', position=406}
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-5819 [main] ERROR o.s.boot.SpringApplication – Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByFirstName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.example.demo.Task17Application.main(Task17Application.java:10)
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByFirstName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByLastName(String) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 16 common frames omitted
-809  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-814  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 11920 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-816  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1499 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
-2357 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2366 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2366 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2366 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2517 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2517 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1648 ms
-2751 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2907 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2951 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2996 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3146 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3279 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-3969 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3978 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4341 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-4520 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByLastName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
-4522 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-4523 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-4530 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-4534 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-4554 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
+11716 [main] INFO  com.example.demo.Aspect.Aspect – DoctorService.addDoctor(..) completed in 39 ms
+11765 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+11768 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+11781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1309052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1309052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1319046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1319047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1329043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1329044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1339052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1339052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1349052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1349052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1359052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1359052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1369054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1369054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1379046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1379046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1389042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1389042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1399041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1399041 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1409054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1409054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1419048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1419048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1429042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1429042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1439052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1439053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1449046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1449046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1459047 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1459048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+1469048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1469048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 5 ms
+346  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.Service.DoctorServiceTest], using SpringBootContextLoader
+358  [main] INFO  o.s.t.c.s.AbstractContextLoader – Could not detect default resource locations for test class [com.example.demo.Service.DoctorServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+360  [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils – Could not detect default configuration classes for test class [com.example.demo.Service.DoctorServiceTest]: DoctorServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+563  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Found @SpringBootConfiguration com.example.demo.Task17Application for test class com.example.demo.Service.DoctorServiceTest
+708  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+734  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper – Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2eced48b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47c4ecdc, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@42f33b5d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5c8504fd, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b7e96a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6475472c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f07b12c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4bd1f8dd, org.springframework.test.context.event.EventPublishingTestExecutionListener@7096b474, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3e14c16d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3c989952, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@784b990c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3d3ba765, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@25bc0606, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d1659ea]
+1295 [main] INFO  c.e.demo.Service.DoctorServiceTest – Starting DoctorServiceTest using Java 16.0.2 on LAPTOP-790PRGJM with PID 5540 (started by kshev in C:\Users\kshev\IdeaProjects\Task17)
+1297 [main] INFO  c.e.demo.Service.DoctorServiceTest – No active profile set, falling back to 1 default profile: "default"
+1309 [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
+2690 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2808 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+4489 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+4983 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+5094 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+5209 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
+5568 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+5827 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+6970 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+6982 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+8022 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+1479048 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1479048 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 5 ms
+9225 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping – Adding welcome page template: index
+10272 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.css']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10273 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.css'] with []
+10274 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.jpg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10275 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.jpg'] with []
+10275 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.png']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10275 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.png'] with []
+10276 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.svg']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10276 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.svg'] with []
+10276 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.mp4']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10277 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.mp4'] with []
+10277 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.js']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10278 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.js'] with []
+10278 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.eot']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10278 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.eot'] with []
+10278 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10279 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff'] with []
+10279 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.woff2']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10279 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.woff2'] with []
+10279 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10280 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**.ttf'] with []
+10280 [main] WARN  o.s.s.c.a.web.builders.WebSecurity – You are asking Spring Security to ignore Ant [pattern='/**/**/**.ttf']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+10280 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure Ant [pattern='/**/**/**.ttf'] with []
+10472 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will not secure any request
+10611 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+10715 [main] INFO  c.e.demo.Service.DoctorServiceTest – Started DoctorServiceTest in 9.896 seconds (JVM running for 11.855)
+11100 [main] INFO  c.e.demo.Service.DoctorService – filter doctors by name testFirstName407
+11281 [main] INFO  com.example.demo.Aspect.Aspect – DoctorService.findDoctorByFirstName(..) completed in 185 ms
+11335 [main] INFO  c.e.demo.Service.DoctorService – Create doctor Doctor{firstName='testFirstName407', lastName='testLastName', position=407}
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-4581 [main] ERROR o.s.boot.SpringApplication – Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByLastName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
-	at com.example.demo.Task17Application.main(Task17Application.java:10)
-Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'patientController' method 
-com.example.demo.View.PatientController#findPatientByLastName(String)
-to {GET [/findPatientByFirstName/patients]}: There is already 'patientController' bean method
-com.example.demo.View.PatientController#findPatientByFirstName(String) mapped.
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
-	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
-	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
-	... 16 common frames omitted
-752  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-757  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 9424 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-758  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1404 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1467 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
-2249 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2257 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2258 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2258 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2411 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1605 ms
-2630 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2897 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2948 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2990 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3137 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3250 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-3948 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3956 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4319 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-4800 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-4835 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-4841 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-4846 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-4847 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-4854 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-4860 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8080"]
-4860 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-4865 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8080"]
-4866 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8080"]
-4881 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-4904 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-750  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-752  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 13032 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-755  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1574 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
-2387 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2395 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2395 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2395 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2546 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2546 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1733 ms
-2819 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-3092 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-3139 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-3179 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3337 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3471 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-4141 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-4149 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4511 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-4981 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-5012 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-5016 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext – Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
-5022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-5024 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-5030 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-5036 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Pausing ProtocolHandler ["http-nio-8080"]
-5036 [main] INFO  o.a.catalina.core.StandardService – Stopping service [Tomcat]
-5041 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Stopping ProtocolHandler ["http-nio-8080"]
-5042 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Destroying ProtocolHandler ["http-nio-8080"]
-5055 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener – 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-5069 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter – 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-740  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-742  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 4100 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-743  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1371 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1430 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
-2236 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2245 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2245 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2246 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2400 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2400 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1609 ms
-2620 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2775 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2813 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2856 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3002 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3119 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-3795 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3803 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4171 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-4625 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-4655 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-4674 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-4691 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.344 seconds (JVM running for 5.359)
-5209 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-5210 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-5211 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-63916 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-63918 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-63925 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-735  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-737  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 6940 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-739  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1385 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
-2247 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2255 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2255 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2255 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2408 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2408 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1618 ms
-2625 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-2781 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-2819 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-2865 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3011 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3135 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-3823 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-3832 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4196 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-4660 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-4693 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-4712 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-4729 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.402 seconds (JVM running for 5.298)
-4827 [RMI TCP Connection(1)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-4827 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-4828 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 1 ms
-30473 [http-nio-8080-exec-1] INFO  c.e.demo.Service.DoctorService – Create doctor Doctor{firstName='Ivan', lastName='Ivanov', position=9}
-
-255006 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
-255008 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
-255015 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
-730  [background-preinit] INFO  o.h.validator.internal.util.Version – HV000001: Hibernate Validator 6.2.3.Final
-742  [main] INFO  com.example.demo.Task17Application – Starting Task17Application using Java 16.0.2 on LAPTOP-790PRGJM with PID 3876 (C:\Users\kshev\IdeaProjects\Task17\target\classes started by kshev in C:\Users\kshev\IdeaProjects\Task17)
-744  [main] INFO  com.example.demo.Task17Application – No active profile set, falling back to 1 default profile: "default"
-1388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-1461 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
-2360 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
-2369 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
-2370 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
-2370 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/9.0.60]
-2559 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
-2559 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 1766 ms
-2858 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
-3020 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
-3066 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
-3115 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 5.6.7.Final
-3282 [main] INFO  o.h.annotations.common.Version – HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-3397 [main] INFO  org.hibernate.dialect.Dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-4131 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-4142 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
-4535 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-5010 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
-5040 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
-5062 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
-5080 [main] INFO  com.example.demo.Task17Application – Started Task17Application in 4.724 seconds (JVM running for 5.762)
-5192 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
-5192 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
-5194 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+11448 [main] INFO  com.example.demo.Aspect.Aspect – DoctorService.addDoctor(..) completed in 113 ms
+11513 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+11517 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+11525 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+1489042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1489042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1499050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1499051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1509051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1509051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1519053 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1519053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+1529044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1529044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1539054 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1539054 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1549040 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1549040 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1559045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1559045 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1569052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1569052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1579050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1579051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1589049 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1589049 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1599044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1599044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1609044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1609044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1619051 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1619051 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1629043 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1629043 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1639044 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1639044 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 8 ms
+1649042 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1649042 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1659046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1659046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1669050 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1669050 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1679041 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1679041 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 6 ms
+1689052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1689053 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1699052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1699052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 9 ms
+1709046 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1709047 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1719045 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1719046 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 7 ms
+1729052 [scheduling-1] INFO  c.e.demo.Service.SheduleService – All entities saved successfully
+1729052 [scheduling-1] INFO  com.example.demo.Aspect.Aspect – SheduleService.saveEntities() completed in 5 ms
+1729659 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+1729664 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+1729678 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
